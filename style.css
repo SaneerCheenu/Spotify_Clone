@@ -20,6 +20,7 @@ nav ul{
     background-color: black;
     color: aliceblue;
     align-items: center;
+    overflow: auto;
 }
 
 nav ul li{
@@ -39,7 +40,7 @@ nav ul li{
 }
 
 .container{
-    height: 69vh;
+    min-height: 69vh;
     background-color: black;
     color: white;
     font-family: 'Pacifico', cursive;
@@ -52,32 +53,9 @@ nav ul li{
     background-size: cover;
 }
 
-
-/* .play{
-    position: relative;
-    top:50%;
-    bottom: 50%;
+.horizontalAdjustment{
+    min-width: 35vw;
 }
-
-.play .fa{
-    position: absolute;
-    right: 10px;
-    top: -60px;
-    padding: 18px;
-    background-color: #1db954;
-    border-radius: 100%;
-    opacity: 0;
-    transition: all ease 0.4s;
-}
-
-.songItem:hover .play .fa{
-    opacity: 1;
-    transform: translateY(-20px);
-} */
-
-/* .songList h1{
-    margin-left: 5px;
-   } */
 
 .bottom{
     position: sticky;
@@ -102,13 +80,9 @@ nav ul li{
     width: 80vw;
 }
 
-.songList{
-    width: 50%;
-}
-
 .songItem{
     cursor: pointer;
-    height: 40px;
+    max-height: auto;
     display: flex;
     width: 80%;
     background-color: white;
@@ -119,4 +93,20 @@ nav ul li{
     align-items: center;
     flex-direction: row;
     border-radius: 13px;
+}
+
+.songItem img{
+    width:40px;
+    border-radius: 100px;
+}
+
+.songInfo{
+    position: absolute;
+    left: 11vw;
+    margin-top: 10px; 
+}
+
+.songInfo img{
+    opacity: 1; 
+    transition: opacity 1s ease-in;
 }
