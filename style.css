@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Pacifico&display=swap');
+
 body{
-    background-color: bisque;
+    background-color:darkslategrey;
 }
 
 *{
@@ -15,19 +16,19 @@ nav{
 nav ul{
     display: flex;
     list-style-type: none;
-    height: 65px;
+    height: 55px;
     background-color: black;
     color: aliceblue;
     align-items: center;
 }
 
 nav ul li{
-    padding: 0 18px;
+    padding: 0 22px;
 }
 
 .brand img{
-    width: 73px;
-    padding: 0 12px;
+    width: 63px;
+    padding: 0 12px 0 0;
 }
 
 .brand{
@@ -35,4 +36,45 @@ nav ul li{
     align-items: center;
     font-weight: bolder;
     font-size: 1.3rem;
+}
+
+.container{
+    height: 69vh;
+    background-color: black;
+    color: white;
+    font-family: 'Pacifico', cursive;
+    display: flex;
+    width: 70%;
+    margin: 23px auto;
+    border-radius: 13px;
+    padding: 10px 34px;
+    background-image: url(https://images6.alphacoders.com/133/1330235.png);
+    background-size: cover;
+}
+
+/* .songList h1{
+    margin-left: 5px;
+   } */
+
+.bottom{
+    position: sticky;
+    height: 100px;
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icons{
+    margin-top: 18px;
+}
+
+.icons i{
+    cursor: pointer; /*This is used so that when you move your moise pointer to any icons it changes into hand pointer*/
+}
+
+#myProgressBar{
+    width: 80vw;
 }
